@@ -1,0 +1,63 @@
+dataset:
+  sizes: [1000, 5000, 10000]
+  scenarios: ["biased", "debiased", "extreme_bias"]
+
+# n_samples e mode são sobrescritos pelo script de pipeline, mas mantidos aqui como fallback
+n_samples: 5000
+mode: "biased" # 'biased' ou 'debiased' ou 'extreme_bias'
+
+# Distribuições base para atributos não-sensíveis
+distributions:
+  years_experience:
+    mean: 5.0
+    std: 3.0
+    min: 0
+    max: 20
+  skills: # Representado como uma nota de 0-100 ou número de habilidades
+    mean: 50.0
+    std: 15.0
+    min: 0
+    max: 100
+  education_level_probs: [0.1, 0.6, 0.25, 0.05] # Ensino Médio, Bacharelado, Mestrado, Doutorado
+  location_probs: [0.6, 0.3, 0.1] # Capitais, Região Metropolitana, Interior
+  work_mode_probs: [0.3, 0.4, 0.3] # presencial, híbrido, remoto
+
+# Probabilidades base para atributos sensíveis
+sensitive_probs:
+  gender: [0.6, 0.35, 0.05] # Masculino, Feminino, Não-binário
+  race: [0.6, 0.15, 0.1, 0.1, 0.05] # Branca, Preta, Parda, Amarela, Indígena
+
+# Parâmetros de viés (usados apenas se mode == 'biased')
+bias_effects:
+  # Valores positivos aumentam o suitability_score, negativos diminuem
+  gender:
+    "Masculino": 0.1
+    "Feminino": -0.1
+    "Não-binário": -0.15
+  race:
+    "Branca": 0.1
+    "Preta": -0.15
+    "Parda": 0.05
+    "Amarela": -0.1
+    "Indígena": -0.05
+  location:
+    "Capitais": 0.05
+    "Interior": -0.1
+
+# Parâmetros de Viés Extremo (usados apenas se mode == 'extreme_bias')
+extreme_bias_effects:
+  gender:
+    "Masculino": 0.2
+    "Feminino": -0.2
+    "Não-binário": -0.3
+  race:
+    "Branca": 0.2
+    "Preta": -0.3
+    "Parda": 0.1
+    "Amarela": -0.2
+    "Indígena": -0.1
+  location:
+    "Capitais": 0.1
+    "Interior": -0.2
+
+noise_std: 0.1

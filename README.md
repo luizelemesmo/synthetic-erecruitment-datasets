@@ -55,17 +55,18 @@ O esquema detalhado dos dados (`data/data_dictionary.csv`) inclui:
 * `location` (categórica ordinal): *Capitais*, *Região Metropolitana*, *Interior*.
 
 ### Variável-Alvo
-* `suitability_score` (float $[0, 1]$): Medida da adequação do candidato à vaga. No cenário base, resulta de uma combinação linear normalizada das variáveis técnicas:
 
-  ```math
-  S_{\text{base}} = \alpha_1 \frac{\text{exp}}{\max(\text{exp})} + \alpha_2 \frac{\text{skills}}{\max(\text{skills})} + f_{\text{edu}}(\text{education\_level})
-  ```
+`suitability_score` (float $[0, 1]$): Medida da adequação do candidato à vaga. No cenário base, resulta de uma combinação linear normalizada das variáveis técnicas:
 
-  Nos cenários com viés, incorpora penalidades demográficas aditivas e ruído gaussiano:
+```math
+S_{\text{base}} = \alpha_1 \frac{\text{exp}}{\max(\text{exp})} + \alpha_2 \frac{\text{skills}}{\max(\text{skills})} + f_{\text{edu}}(\text{education\_level})
+```
 
-  ```math
-  \text{suitability\_score} = \text{clip}\left(S_{\text{base}} + B_{\text{gênero}} + B_{\text{raça}} + B_{\text{local}} + \varepsilon,\ 0,\ 1\right)
-  ```
+Nos cenários com viés, incorpora penalidades demográficas aditivas e ruído gaussiano:
+
+```math
+\text{suitability\_score} = \text{clip}\left(S_{\text{base}} + B_{\text{gênero}} + B_{\text{raça}} + B_{\text{local}} + \varepsilon,\ 0,\ 1\right)
+```
 
 ---
 

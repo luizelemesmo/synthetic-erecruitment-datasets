@@ -1,169 +1,215 @@
 # Synthetic E-Recruitment Datasets Generator
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Institution](https://img.shields.io/badge/UFOP-DECOM-red.svg)](https://decom.ufop.br/)
+[![Conference](https://img.shields.io/badge/SBBD--DSW-2026-green.svg)](https://sbbd.org.br/)
 
-## 📌 Descrição do Projeto
+Este repositório provê um **gerador estatístico controlado e artefatos de dados sintéticos para e-recrutamento (Dataset Showcase)**, concebidos especificamente para a pesquisa e avaliação empírica de **justiça algorítmica (*fairness*), diversidade e flexibilidade geográfica** em sistemas de recomendação e ranqueamento de candidatos.
 
-Este repositório fornece **artefatos prontos para Dataset Showcase** gerados para sistemas de recomendação de recrutamento online (e-recrutamento). O objetivo principal é viabilizar pesquisas sobre justiça algorítmica (fairness), diversidade e robustez, fornecendo distribuições demográficas altamente controladas e injeções explícitas de viés. 
+O artefato integra a pesquisa de monografia em Ciência da Computação na **Universidade Federal de Ouro Preto (UFOP)** e foi aceito no **Simpósio Brasileiro de Banco de Dados — Dataset Showcase Workshop (SBBD DSW 2026)**.
 
-Ideal para pesquisadores e engenheiros de Machine Learning que desejam avaliar a mitigação de viés em algoritmos de ranqueamento e recomendação de candidatos.
+---
 
-## ✨ Funcionalidades
+## 📌 Contexto e Motivação
 
-- **Geração Controlada:** Permite a geração top-down via regras estatísticas rigorosas, refletindo ou mitigando vieses explícitos no mercado de trabalho.
-- **FairGAN (Opcional):** Um baseline alternativo baseado em Generative Adversarial Networks para síntese de dados baseados na distribuição original.
-- **Cenários Variados:** Datasets gerados nos modos `biased`, `debiased` e `extreme_bias`.
-- **Escalabilidade:** Geração pronta para volumes diferentes (ex: 1k, 5k, 10k amostras), ideais para testes de estresse em modelos.
-- **Relatórios Automatizados:** Geração automática de gráficos e estatísticas comparativas entre os cenários.
+Sistemas automatizados de recomendação para triagem de currículos enfrentam regulamentações éticas crescentes (como o *EU AI Act* e a *NYC Local Law 144*), mas pesquisadores encontram barreiras severas de acesso a dados reais devido a legislações de proteção à privacidade (LGPD, GDPR). Além disso, dados corporativos reais possuem viés estático, impossibilitando a execução de *stress tests* sob magnitudes controladas de disparidade.
 
-## 🛠️ Stack Utilizada
+Para mitigar essas limitações, este projeto introduz um ecossistema com **9 partições controladas (3 cenários de viés × 3 escalas de tamanho)** com:
+* **Ground Truth Matemático Perfeitamente Conhecido**: Permite saber a adequação técnica pura de cada candidato versus o impacto de penalidades demográficas.
+* **Calibração Demográfica para o Brasil**: Proporções e disparidades socioeconômicas calibradas segundo dados da PNAD Contínua / IBGE (gênero e raça).
+* **Flexibilidade Geográfica como Dimensão de Justiça**: Representação explícita de localizações (Capitais, Regiões Metropolitanas e Interior) e modalidades de trabalho (Presencial, Híbrido, Remoto).
 
-- **Linguagem:** Python 3.8+
-- **Processamento de Dados:** Pandas, NumPy
-- **Machine Learning / Deep Learning:** Scikit-Learn, PyTorch (para FairGAN)
-- **Visualização:** Matplotlib, Seaborn
-- **Configuração:** PyYAML
+---
+
+## 🎯 Cenários e Partições
+
+O repositório disponibiliza 9 conjuntos prontos em `data/final/` e pipelines para regeneração paramétrica:
+
+| Cenário | Descrição | Parâmetros de Penalização Demográfica | Ruído ($\sigma$) |
+|---|---|---|---|
+| **`debiased`** (Justo) | Distribuição demográfica uniforme. O escore depende estritamente das métricas técnicas, sem penalidades de atributos sensíveis. Serve como **Ground Truth**. | $B_{attr} = 0$ | $\sigma = 0.05$ |
+| **`biased`** (Realista) | Distribuição assimétrica espelhando o setor de TI brasileiro, com injeção aditiva de penalidades em grupos minoritários/marginalizados. | Gênero: $-0.10$<br>Raça (Preta/Parda): $-0.10$ a $-0.15$<br>Local (Interior): $-0.05$ | $\sigma = 0.07$ |
+| **`extreme_bias`** (Estresse) | Magnificação drástica das penalidades estruturais para avaliar os limites e quebras de algoritmos de mitigação e re-ranking. | Gênero: $-0.25$<br>Raça (Preta/Parda): $-0.20$ a $-0.30$<br>Local (Interior): $-0.15$ | $\sigma = 0.05$ |
+
+### Escalas de Tamanho
+* **1k (1.000 amostras)**: Prototipação rápida, pipelines de CI e testes com baixo custo computacional.
+* **5k (5.000 amostras)**: Equilíbrio ideal entre estabilidade estatística e tempo de processamento.
+* **10k (10.000 amostras)**: Escala para publicações científicas com métricas de paridade demográfica estabilizadas.
+
+---
+
+## 📐 Estrutura das Variáveis
+
+O esquema detalhado dos dados (`data/data_dictionary.csv`) inclui:
+
+### Features Técnicas (Objetivas)
+* `years_experience` (float): Anos de experiência profissional (Normal truncada, $\mu=5.0, \sigma=3.0$, intervalo $[0, 20]$).
+* `skills` (float): Pontuação quantitativa de habilidades técnicas (Normal truncada, $\mu=50.0, \sigma=15.0$, intervalo $[0, 100]$).
+* `education_level` (categórica ordinal): Escolaridade (*Ensino Médio*, *Bacharelado*, *Mestrado*, *Doutorado*), modelando a pirâmide educacional de TI.
+* `preferred_work_mode` (categórica nominal): Modalidade preferida (*Presencial*, *Híbrido*, *Remoto*).
+
+### Atributos Sensíveis (Protegidos)
+* `gender` (categórica): *Masculino*, *Feminino*, *Não-binário*.
+* `race` (categórica): *Branca*, *Preta*, *Parda*, *Amarela*, *Indígena* (alinhado ao padrão IBGE).
+* `location` (categórica ordinal): *Capitais*, *Região Metropolitana*, *Interior*.
+
+### Variável-Alvo
+* `suitability_score` (float $[0, 1]$): Medida da adequação do candidato à vaga. No cenário base, resulta de uma combinação linear normalizada das variáveis técnicas:
+  $$S_{base} = \alpha_1 \frac{\text{exp}}{\max(\text{exp})} + \alpha_2 \frac{\text{skills}}{\max(\text{skills})} + f_{edu}(\text{education\_level})$$
+  Nos cenários com viés, incorpora penalidades demográficas aditivas e ruído gaussiano:
+  $$\text{suitability\_score} = \text{clip}(S_{base} + B_{gênero} + B_{raça} + B_{local} + \varepsilon, 0, 1)$$
+
+---
+
+## 🛠️ Tecnologias e Dependências
+
+* **Linguagem**: Python 3.8+
+* **Manipulação de Dados**: Pandas, NumPy
+* **Visualização Científica**: Matplotlib, Seaborn
+* **Modelos Adversariais (Baseline)**: PyTorch, Scikit-Learn
+* **Configuração e Validação**: PyYAML, Pydantic
+
+---
 
 ## 🚀 Instalação e Configuração
 
-### Pré-requisitos
-- Python 3.8 ou superior
-- Pip (gerenciador de pacotes do Python)
-
-### Passo a Passo
-
-1. Clone o repositório:
+### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/usuario/synthetic-erecruitment-datasets.git
+git clone https://github.com/luizelemesmo/synthetic-erecruitment-datasets.git
 cd synthetic-erecruitment-datasets
 ```
 
-2. Crie um ambiente virtual e ative-o (Recomendado):
+### 2. Criar e Ativar o Ambiente Virtual
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate  # No Windows: .venv\Scripts\activate
 ```
 
-3. Instale as dependências do projeto:
+### 3. Instalar Dependências
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-4. Configure as variáveis de ambiente:
+### 4. Configurar Variáveis de Ambiente
 ```bash
 cp .env.example .env
 ```
-*(Ajuste o `.env` conforme a necessidade de caminhos e parâmetros específicos).*
 
-## ⚙️ Como Executar Localmente
+---
 
-### Gerando os Datasets
-Para rodar o pipeline completo e gerar todos os datasets em todos os cenários e tamanhos, utilize o ponto de entrada principal:
+## ⚙️ Como Executar
 
+### 1. Geração Automatizada dos Datasets
+Para gerar as 9 partições e seus respectivos relatórios de avaliação estatística em lote:
 ```bash
 python generate_dataset.py --config configs/data_config.yaml
 ```
 
-Este comando irá:
-1. Iterar sobre os tamanhos configurados (ex: 1k, 5k, 10k).
-2. Gerar os dados para os três cenários: `biased`, `debiased`, e `extreme_bias`.
-3. Salvar os arquivos CSV resultantes na pasta `data/final/`.
-4. Gerar relatórios estatísticos e gráficos de distribuição na pasta `reports/`.
-
-### Gerando Análises Avançadas e Comparativas
-
-Para gerar análises cross-cenário, heatmaps interseccionais, testes estatísticos e tabelas-resumo, execute:
-
+### 2. Análises Comparativas e Testes Estatísticos
+Para gerar relatórios comparativos entre cenários, matrizes de correlação, testes de hipótese não paramétricos (Mann-Whitney) e gráficos consolidados:
 ```bash
 python -m src.evaluation.advanced_analysis
 ```
+Os resultados consolidados serão salvos em `reports/comparative/`.
 
-Este comando irá (a partir dos datasets já gerados em `data/final/`):
-1. Regenerar todos os relatórios per-dataset no formato atualizado.
-2. Gerar **12 gráficos comparativos** em `reports/comparative/`.
-3. Gerar **3 tabelas markdown** com métricas, testes e estatísticas descritivas.
+### 3. Scripts de Demonstração e Uso Rápido
+Consulte o diretório `examples/` para scripts demonstrativos:
+```bash
+# Carregar e inspecionar partições
+python examples/load_dataset.py
 
-## 📁 Estrutura do Projeto
+# Comparar estabilidade entre tamanhos de partição (1k vs 5k vs 10k)
+python examples/compare_dataset_sizes.py
+
+# Análise básica de métricas de fairness (Paridade Demográfica, Disparate Impact)
+python examples/basic_fairness_analysis.py
+```
+
+---
+
+## 📁 Estrutura do Repositório
 
 ```text
-project_root/
-├── configs/                 # Arquivos de configuração YAML (ex: data_config.yaml)
-├── data/                    
-│   ├── final/               # Datasets gerados (CSV)
-│   ├── raw/                 # Dados originais/semente
-│   └── README.md            # Documentação específica dos datasets
-├── docs/                    # Documentações adicionais (ex: artigos, paper.tex)
-├── examples/                # Exemplos de uso prático dos dados
-├── notebooks/               # Notebooks Jupyter para exploração de dados e prototipagem
-├── reports/                 # Relatórios estatísticos e gráficos dos datasets gerados
-│   ├── {scenario}_{size}k/  # Relatório individual por cenário/tamanho
-│   │   ├── summary.md       # Métricas de fairness e estatísticas descritivas
-│   │   └── plots/           # demographic_dist, continuous_dist, violin, heatmap
-│   └── comparative/         # Análises cross-cenário (geradas por advanced_analysis.py)
-├── src/                     # Código fonte do projeto
-│   ├── evaluation/          # Scripts de avaliação de métricas de justiça (fairness)
-│   │   ├── report_generator.py      # Gerador de relatórios por dataset
-│   │   └── advanced_analysis.py     # Análises comparativas e testes estatísticos
-│   ├── generators/          # Código dos geradores (Controlado, FairGAN)
-│   └── pipeline/            # Orquestração do pipeline de dados
-├── .env.example             # Exemplo de configuração de variáveis de ambiente
-├── .gitignore               # Arquivos e pastas ignorados pelo Git
-├── generate_dataset.py      # Script principal para rodar o pipeline de geração
-├── LICENSE                  # Licença de uso
-├── README.md                # Documentação principal
-└── requirements.txt         # Dependências do projeto
+synthetic-erecruitment-datasets/
+├── configs/
+│   ├── data_config.yaml         # Parâmetros de distribuição, penalidades e sementes
+│   └── fairgan_config.yaml      # Hiperparâmetros do baseline gerador FairGAN
+├── data/
+│   ├── final/                   # Partições geradas em CSV (1k, 5k, 10k x 3 cenários)
+│   ├── processed/               # Dados processados intermediários
+│   ├── raw/                     # Dados sementes de referência
+│   ├── data_dictionary.csv      # Dicionário formal de atributos
+│   └── README.md                # Guia detalhado dos dados e uso de fairness
+├── docs/
+│   ├── data_dictionary.md       # Documentação textual dos campos
+│   ├── methodology.md           # Metodologia matemática de síntese
+│   └── relatorio_tecnico.md     # Relatório técnico completo de arquitetura
+├── examples/                    # Scripts prontos para demonstração e análise rápida
+├── notebooks/                   # Notebooks Jupyter para exploração visual interativa
+├── reports/
+│   ├── {scenario}_{size}/       # Relatório individual de cada partição (summary.md + plots)
+│   └── comparative/             # Análises cross-cenário, violins e testes estatísticos
+├── src/
+│   ├── evaluation/              # Cálculo de fairness, paridade, dispersão e relatórios
+│   ├── generators/              # ControlledGenerator, FairGAN e schemas de validação
+│   └── utils/                   # Gerenciamento de sementes e carregador de configs
+├── .env.example                 # Exemplo de configuração de ambiente
+├── .gitignore                   # Regras de exclusão de artefatos temporários
+├── generate_dataset.py          # Entrypoint CLI do pipeline de geração
+├── LICENSE                      # Licença MIT
+├── README.md                    # Este documento
+└── requirements.txt             # Dependências do projeto Python
 ```
 
-## 💡 Exemplos de Uso
+---
 
-Acesse o diretório `examples/` para ver aplicações práticas dos datasets gerados:
+## 📊 Relatórios e Métricas de Fairness
 
-- **Carregamento Básico:**
-  ```bash
-  python examples/load_dataset.py
-  ```
-- **Análise de Escalabilidade:**
-  ```bash
-  python examples/compare_dataset_sizes.py
-  ```
-- **Análise de Justiça (Fairness):**
-  Calcula a paridade demográfica entre os cenários.
-  ```bash
-  python examples/basic_fairness_analysis.py
-  ```
+Para cada partição gerada, o diretório `reports/` inclui tabelas com métricas éticas fundamentais:
+* **Demographic Parity Difference**: Diferença máxima entre taxas de seleção de grupos demográficos.
+* **Disparate Impact Ratio**: Razão entre probabilidades de pontuação qualificada ($p \ge 0.8$ pela regra dos 4/5).
+* **Entropia de Shannon**: Mensuração da diversidade demográfica na distribuição de candidatos.
+* **Visualizações**: Gráficos de violino por grupo sensível, heatmaps de correlação e curvas de densidade (KDE).
 
-## 📊 Relatórios e Visualizações
+---
 
-Após rodar a geração, o diretório `reports/` é populado com um relatório estatístico completo (`summary.md`) e diversas análises avançadas no subdiretório `plots/`, incluindo:
+## 👥 Equipe e Autoria
 
-- **Distribuições Demográficas e Contínuas** (Histogramas, KDE)
-- **Comparação de Desempenho por Grupo** (Violin Plots)
-- **Correlação entre Variáveis** (Heatmaps)
-- **Métricas de Justiça e Diversidade** (Disparate Impact, Demographic Parity, Entropia de Shannon)
+* **Autor / Pesquisador**: **Luiz H. Carvalho** ([luizhenrique910@gmail.com](mailto:luizhenrique910@gmail.com)) — Departamento de Computação, Universidade Federal de Ouro Preto (UFOP).
+* **Orientador**: **Prof. Dr. Reinaldo Silva Fortes** — Departamento de Computação, Universidade Federal de Ouro Preto (UFOP).
 
-*(Abaixo, alguns exemplos de gráficos que são gerados na pasta `reports/`)*
+---
 
-```markdown
-![Distribuições Contínuas](reports/biased_5k/plots/continuous_dist.png)
-![Distribuição de Scores (Violin Plots)](reports/biased_5k/plots/score_violin_plots.png)
-![Matriz de Correlação](reports/biased_5k/plots/correlation_heatmap.png)
+## 📖 Como Citar
+
+Se este dataset ou metodologia for utilizado em sua pesquisa, por favor cite:
+
+```bibtex
+@inproceedings{carvalho2026dataset,
+  author    = {Luiz H. Carvalho and Reinaldo Silva Fortes},
+  title     = {Um dataset sintético multi-cenário para avaliação de fairness em sistemas de recomendação de recrutamento},
+  booktitle = {Anais do XLI Simpósio Brasileiro de Banco de Dados — Dataset Showcase Workshop (SBBD DSW)},
+  year      = {2026},
+  location  = {Brasil},
+  publisher = {SBC}
+}
 ```
 
-## ☁️ Instruções de Deploy
+```bibtex
+@monography{carvalho2026monografia,
+  author    = {Luiz H. Carvalho},
+  title     = {Um Sistema de Recomendação para E-Recrutamento com Foco em Fairness, Diversidade e Flexibilidade Geográfica},
+  school    = {Universidade Federal de Ouro Preto (UFOP), Instituto de Ciências Exatas e Biológicas, Departamento de Computação},
+  year      = {2026},
+  type      = {Trabalho de Conclusão de Curso (Bacharelado em Ciência da Computação)},
+  advisor   = {Reinaldo Silva Fortes}
+}
+```
 
-O objetivo principal desta ferramenta é a **geração offline** de artefatos de dados. Caso deseje disponibilizar seus datasets publicamente ("deploy" dos dados):
-
-1. **Hugging Face Datasets**:
-   Utilize a biblioteca `datasets` do Hugging Face para fazer o upload dos CSVs gerados na pasta `data/final/` e torná-los públicos para a comunidade de pesquisa.
-   
-2. **Kaggle**:
-   A pasta `data/final/` contém tudo o que é necessário para criar um Dataset no Kaggle, bastando anexar o `data/README.md` como descrição.
-
-## ✍️ Autor
-
-- **Luiz Henrique** - Pesquisa e Desenvolvimento.
+---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está distribuído sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.

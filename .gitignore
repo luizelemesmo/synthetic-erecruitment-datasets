@@ -176,3 +176,6 @@ generation.log
 data/final/*
 !data/final/.gitkeep
 # reports/ is tracked — generated plots and tables are part of the repository
+
+# Local backups
+.git_old/

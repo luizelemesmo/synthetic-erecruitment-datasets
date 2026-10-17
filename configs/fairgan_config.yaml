@@ -1,0 +1,13 @@
+epochs: 200
+batch_size: 256
+learning_rate: 0.0002
+latent_dim: 64
+
+# Weights for adversarial and fairness loss
+lambda_adversarial: 1.0
+lambda_fairness: 0.5
+
+# Input dimension (calculated dynamically based on one-hot encoding size)
+input_dim: null 
+
+sensitive_columns: ["gender", "race"]

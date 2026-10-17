@@ -5,11 +5,11 @@ CAND_00002,6.9,51.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.
 CAND_00003,9.6,40.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.8122580267978341
 CAND_00004,4.3,60.0,Mestrado,Capitais,Presencial,Feminino,Branca,0.5314349696970007
 CAND_00005,4.3,56.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.7653818690086597
-CAND_00006,9.7,63.0,Ensino Médio,Capitais,Híbrido,Feminino,Parda,0.46474542298780147
+CAND_00006,9.7,63.0,Ensino Médio,Capitais,Híbrido,Feminino,Parda,0.31474542298780145
 CAND_00007,7.3,60.0,Doutorado,Região Metropolitana,Híbrido,Feminino,Preta,0.5965297429458312
 CAND_00008,3.6,66.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7394887947089408
 CAND_00009,6.6,42.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.3624489110431257
-CAND_00010,3.6,70.0,Ensino Médio,Capitais,Remoto,Masculino,Parda,0.78880793504886
+CAND_00010,3.6,70.0,Ensino Médio,Capitais,Remoto,Masculino,Parda,0.6388079350488601
 CAND_00011,3.6,53.0,Bacharelado,Capitais,Remoto,Feminino,Indígena,0.3465901388394959
 CAND_00012,5.7,81.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.9731124098380239
 CAND_00013,0.0,40.0,Mestrado,Região Metropolitana,Presencial,Não-binário,Branca,0.4323855918542594
@@ -40,7 +40,7 @@ CAND_00037,0.0,28.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.5426389482073
 CAND_00038,1.0,53.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.48216932247089456
 CAND_00039,5.6,66.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.7778793017451721
 CAND_00040,7.2,75.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.7303528242521522
-CAND_00041,5.5,43.0,Mestrado,Capitais,Remoto,Feminino,Parda,0.4991469317590391
+CAND_00041,5.5,43.0,Mestrado,Capitais,Remoto,Feminino,Parda,0.3491469317590391
 CAND_00042,4.7,66.0,Mestrado,Interior,Híbrido,Masculino,Branca,0.7732648103261692
 CAND_00043,4.1,49.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.6062596206503048
 CAND_00044,0.6,47.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6467950422131852
@@ -54,7 +54,7 @@ CAND_00051,3.8,56.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca
 CAND_00052,3.0,57.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.6558840961294297
 CAND_00053,6.8,54.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.5434374293230406
 CAND_00054,8.1,42.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.8940067846495161
-CAND_00055,7.8,40.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.38229098663849614
+CAND_00055,7.8,40.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.2322909866384961
 CAND_00056,2.5,50.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.5941279572895372
 CAND_00057,4.1,68.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7986536506940711
 CAND_00058,6.0,58.0,Ensino Médio,Região Metropolitana,Remoto,Feminino,Branca,0.47196104184027826
@@ -62,7 +62,7 @@ CAND_00059,7.9,44.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.6434179547
 CAND_00060,3.6,62.0,Mestrado,Interior,Remoto,Masculino,Amarela,0.4679003143392759
 CAND_00061,4.4,7.0,Ensino Médio,Interior,Híbrido,Masculino,Branca,0.22986904203028924
 CAND_00062,1.7,67.0,Mestrado,Capitais,Híbrido,Masculino,Amarela,0.7698562173991662
-CAND_00063,1.4,24.0,Ensino Médio,Capitais,Presencial,Feminino,Parda,0.24343334633382332
+CAND_00063,1.4,24.0,Ensino Médio,Capitais,Presencial,Feminino,Parda,0.0934333463338233
 CAND_00064,7.4,45.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.5132659773378494
 CAND_00065,9.1,33.0,Mestrado,Região Metropolitana,Presencial,Masculino,Branca,0.8103925423055571
 CAND_00066,4.8,31.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.6449450945930072
@@ -75,9 +75,9 @@ CAND_00072,4.9,51.0,Mestrado,Região Metropolitana,Remoto,Masculino,Branca,0.809
 CAND_00073,9.7,31.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.4173465969809601
 CAND_00074,0.0,65.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.2634444108523495
 CAND_00075,7.5,43.0,Mestrado,Região Metropolitana,Híbrido,Feminino,Branca,0.46328847293798525
-CAND_00076,5.3,27.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.4006077040940713
+CAND_00076,5.3,27.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.25060770409407124
 CAND_00077,4.1,44.0,Doutorado,Capitais,Híbrido,Feminino,Branca,0.5155168652474362
-CAND_00078,5.3,73.0,Ensino Médio,Capitais,Híbrido,Masculino,Parda,0.748249969612929
+CAND_00078,5.3,73.0,Ensino Médio,Capitais,Híbrido,Masculino,Parda,0.5982499696129291
 CAND_00079,0.0,63.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Preta,0.26292511364477367
 CAND_00080,4.3,45.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.47331734232186584
 CAND_00081,6.1,45.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Preta,0.4089337161715349
@@ -91,8 +91,8 @@ CAND_00088,3.4,46.0,Doutorado,Interior,Híbrido,Masculino,Amarela,0.622201392465
 CAND_00089,6.5,47.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.5323907951380945
 CAND_00090,5.3,49.0,Doutorado,Capitais,Remoto,Masculino,Branca,0.8129571580077859
 CAND_00091,7.9,49.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.7623561566751975
-CAND_00092,2.9,61.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.652197684475581
-CAND_00093,4.0,51.0,Bacharelado,Interior,Híbrido,Feminino,Parda,0.4372873355636312
+CAND_00092,2.9,61.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.5021976844755811
+CAND_00093,4.0,51.0,Bacharelado,Interior,Híbrido,Feminino,Parda,0.2872873355636312
 CAND_00094,3.8,61.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.6354985516069331
 CAND_00095,0.6,49.0,Bacharelado,Capitais,Presencial,Masculino,Amarela,0.32189503278344245
 CAND_00096,5.9,51.0,Ensino Médio,Região Metropolitana,Remoto,Masculino,Branca,0.7597180936504563
@@ -116,13 +116,13 @@ CAND_00113,12.4,57.0,Mestrado,Capitais,Híbrido,Masculino,Branca,1.0
 CAND_00114,4.4,52.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.5827187412827739
 CAND_00115,5.9,55.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.4382645628585908
 CAND_00116,4.9,86.0,Bacharelado,Capitais,Remoto,Feminino,Amarela,0.49964513451224235
-CAND_00117,1.5,49.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.22514440317871434
+CAND_00117,1.5,49.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.07514440317871432
 CAND_00118,8.4,53.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca,0.5484970575073157
 CAND_00119,7.3,66.0,Bacharelado,Capitais,Remoto,Feminino,Preta,0.4052756352076695
 CAND_00120,7.4,67.0,Mestrado,Capitais,Híbrido,Masculino,Branca,1.0
 CAND_00121,2.3,68.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.4409181197271311
 CAND_00122,9.2,60.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.49616473711976755
-CAND_00123,0.8,33.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.40845720390749585
+CAND_00123,0.8,33.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.2584572039074958
 CAND_00124,6.8,75.0,Mestrado,Região Metropolitana,Remoto,Feminino,Branca,0.5023431499685082
 CAND_00125,11.6,33.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.8976657357758984
 CAND_00126,2.0,55.0,Mestrado,Região Metropolitana,Híbrido,Não-binário,Branca,0.5648639295024037
@@ -141,22 +141,22 @@ CAND_00138,7.4,59.0,Bacharelado,Interior,Presencial,Masculino,Branca,0.617729629
 CAND_00139,1.3,61.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.382880696999237
 CAND_00140,5.7,46.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7052153236821762
 CAND_00141,8.9,71.0,Bacharelado,Capitais,Remoto,Feminino,Branca,0.7358237230816163
-CAND_00142,0.2,48.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.3816661008916139
+CAND_00142,0.2,48.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.23166610089161388
 CAND_00143,5.6,52.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7287473753680739
 CAND_00144,5.8,47.0,Ensino Médio,Região Metropolitana,Híbrido,Feminino,Preta,0.17730429515294843
-CAND_00145,7.3,50.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6241935216381735
+CAND_00145,7.3,50.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.47419352163817363
 CAND_00146,1.3,34.0,Doutorado,Capitais,Híbrido,Feminino,Branca,0.4032143695092
 CAND_00147,1.0,28.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.3050610848766215
 CAND_00148,6.6,74.0,Bacharelado,Interior,Híbrido,Masculino,Preta,0.31465789817073764
 CAND_00149,5.9,37.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.6509923715249394
-CAND_00150,5.8,35.0,Mestrado,Interior,Presencial,Não-binário,Parda,0.16646456263408
+CAND_00150,5.8,35.0,Mestrado,Interior,Presencial,Não-binário,Parda,0.016464562634080027
 CAND_00151,6.0,18.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.7482853693033217
 CAND_00152,3.0,40.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.8037827745388301
 CAND_00153,5.7,30.0,Doutorado,Região Metropolitana,Presencial,Masculino,Preta,0.34792431982981803
 CAND_00154,5.9,75.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.8714207862374675
 CAND_00155,2.9,65.0,Ensino Médio,Região Metropolitana,Híbrido,Masculino,Branca,0.5453258095117982
 CAND_00156,10.6,40.0,Mestrado,Interior,Híbrido,Feminino,Branca,0.5760954173797791
-CAND_00157,6.4,84.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Parda,0.6874741590914786
+CAND_00157,6.4,84.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Parda,0.5374741590914784
 CAND_00158,1.4,65.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Amarela,0.28605867584277134
 CAND_00159,7.0,45.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.6327011033110647
 CAND_00160,2.1,13.0,Ensino Médio,Capitais,Remoto,Feminino,Preta,0.0
@@ -164,23 +164,23 @@ CAND_00161,7.4,84.0,Bacharelado,Interior,Híbrido,Feminino,Amarela,0.23089747248
 CAND_00162,8.5,29.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.8182350470895754
 CAND_00163,2.5,25.0,Bacharelado,Região Metropolitana,Híbrido,Não-binário,Branca,0.16630196455604135
 CAND_00164,7.9,65.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Preta,0.5731964259331828
-CAND_00165,6.2,87.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.5375901971737667
+CAND_00165,6.2,87.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.3875901971737667
 CAND_00166,7.5,71.0,Ensino Médio,Interior,Híbrido,Feminino,Amarela,0.2225527628201137
 CAND_00167,10.7,58.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.8607755907400129
 CAND_00168,4.3,59.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6458175328341151
 CAND_00169,2.7,63.0,Doutorado,Capitais,Remoto,Masculino,Branca,0.8270367113540887
 CAND_00170,2.3,61.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.8930334564354411
 CAND_00171,2.6,54.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.5401905214167285
-CAND_00172,4.8,52.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.8211810143273844
+CAND_00172,4.8,52.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.6711810143273845
 CAND_00173,6.0,49.0,Mestrado,Região Metropolitana,Presencial,Masculino,Branca,0.8658097633487785
-CAND_00174,5.8,39.0,Mestrado,Interior,Presencial,Feminino,Parda,0.2403845010971956
+CAND_00174,5.8,39.0,Mestrado,Interior,Presencial,Feminino,Parda,0.09038450109719559
 CAND_00175,7.5,46.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5884945394909449
 CAND_00176,5.0,25.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.6301960900171765
 CAND_00177,9.4,49.0,Bacharelado,Interior,Presencial,Feminino,Branca,0.37925924772331276
 CAND_00178,4.2,35.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.7608603219163004
 CAND_00179,13.2,33.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7994807540499832
 CAND_00180,6.9,53.0,Bacharelado,Capitais,Remoto,Masculino,Indígena,0.5197800591964821
-CAND_00181,2.4,71.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.3672840488988288
+CAND_00181,2.4,71.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.2172840488988288
 CAND_00182,1.8,64.0,Mestrado,Capitais,Presencial,Feminino,Branca,0.6509904959090831
 CAND_00183,6.4,26.0,Bacharelado,Interior,Presencial,Masculino,Branca,0.42488160259158136
 CAND_00184,4.3,35.0,Ensino Médio,Capitais,Remoto,Feminino,Amarela,0.18038287994604277
@@ -207,7 +207,7 @@ CAND_00204,0.9,51.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.63123767916
 CAND_00205,2.2,51.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0.24153778726641958
 CAND_00206,6.5,39.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.5503426566857493
 CAND_00207,6.5,40.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7771524386087935
-CAND_00208,6.5,29.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.2708800863366322
+CAND_00208,6.5,29.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.12088008633663219
 CAND_00209,16.6,76.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.9327481723170337
 CAND_00210,6.7,31.0,Mestrado,Capitais,Híbrido,Masculino,Indígena,0.715943789169486
 CAND_00211,8.4,40.0,Ensino Médio,Região Metropolitana,Remoto,Masculino,Branca,0.5668240360495416
@@ -215,7 +215,7 @@ CAND_00212,7.9,39.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.627594784594
 CAND_00213,7.0,63.0,Ensino Médio,Região Metropolitana,Remoto,Feminino,Branca,0.47660023348021685
 CAND_00214,4.1,46.0,Bacharelado,Capitais,Remoto,Feminino,Branca,0.44980451830586726
 CAND_00215,7.3,69.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.8658412699496645
-CAND_00216,2.7,40.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.2756001143253559
+CAND_00216,2.7,40.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.1256001143253559
 CAND_00217,4.3,54.0,Doutorado,Capitais,Remoto,Feminino,Amarela,0.4152497143495646
 CAND_00218,3.5,37.0,Bacharelado,Capitais,Remoto,Masculino,Indígena,0.4298510585175907
 CAND_00219,5.2,82.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.699950655659497
@@ -238,10 +238,10 @@ CAND_00235,6.9,75.0,Mestrado,Região Metropolitana,Presencial,Masculino,Branca,0
 CAND_00236,0.0,75.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Preta,0.5582999938516868
 CAND_00237,5.6,42.0,Bacharelado,Capitais,Híbrido,Feminino,Amarela,0.17236188125979418
 CAND_00238,3.0,59.0,Doutorado,Capitais,Remoto,Masculino,Amarela,0.5286209894340524
-CAND_00239,7.6,74.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.6937537163279768
+CAND_00239,7.6,74.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.5437537163279766
 CAND_00240,2.6,44.0,Doutorado,Capitais,Híbrido,Não-binário,Amarela,0.006738743618956211
 CAND_00241,4.7,47.0,Doutorado,Interior,Híbrido,Masculino,Branca,0.6170544306835011
-CAND_00242,6.5,41.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.5509168798375329
+CAND_00242,6.5,41.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.4009168798375329
 CAND_00243,7.6,35.0,Doutorado,Capitais,Remoto,Feminino,Branca,0.5443446198566476
 CAND_00244,1.4,40.0,Bacharelado,Capitais,Presencial,Não-binário,Branca,0.3081179910970796
 CAND_00245,4.0,32.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca,0.3221755622092492
@@ -256,15 +256,15 @@ CAND_00253,8.1,56.0,Mestrado,Interior,Presencial,Masculino,Branca,0.698918747333
 CAND_00254,0.4,68.0,Mestrado,Região Metropolitana,Remoto,Masculino,Branca,0.6736726040103085
 CAND_00255,3.5,32.0,Doutorado,Interior,Presencial,Feminino,Branca,0.28202513587460337
 CAND_00256,8.8,75.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.9743852343606147
-CAND_00257,2.9,56.0,Doutorado,Interior,Híbrido,Masculino,Parda,0.5945886530576658
+CAND_00257,2.9,56.0,Doutorado,Interior,Híbrido,Masculino,Parda,0.4445886530576658
 CAND_00258,6.3,39.0,Mestrado,Capitais,Presencial,Masculino,Preta,0.4343448576780759
 CAND_00259,7.3,49.0,Bacharelado,Capitais,Remoto,Não-binário,Branca,0.36154105561995276
 CAND_00260,2.2,58.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.38664049862808797
 CAND_00261,4.8,51.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.5858619884397903
-CAND_00262,0.0,58.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.5332223548415169
+CAND_00262,0.0,58.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.38322235484151695
 CAND_00263,1.9,36.0,Bacharelado,Capitais,Remoto,Não-binário,Branca,0.21233344077156036
 CAND_00264,4.2,53.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.46944394874814593
-CAND_00265,1.3,29.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.5790101853610371
+CAND_00265,1.3,29.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.4290101853610371
 CAND_00266,9.9,48.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.9099299572921586
 CAND_00267,0.7,36.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.6047723105897382
 CAND_00268,3.7,39.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.621291527385685
@@ -276,7 +276,7 @@ CAND_00273,5.0,45.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.719387321
 CAND_00274,2.1,68.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Indígena,0.3969323772582863
 CAND_00275,6.4,52.0,Bacharelado,Capitais,Híbrido,Feminino,Indígena,0.32283484754863556
 CAND_00276,5.6,85.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.8811202755138032
-CAND_00277,3.2,56.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.6516426705084971
+CAND_00277,3.2,56.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.5016426705084971
 CAND_00278,5.2,53.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.5475967600800998
 CAND_00279,3.8,45.0,Ensino Médio,Capitais,Presencial,Masculino,Branca,0.3572177942437669
 CAND_00280,5.3,52.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Preta,0.39182185962838656
@@ -304,7 +304,7 @@ CAND_00301,3.3,65.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.505470562
 CAND_00302,7.2,47.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.8709764133946356
 CAND_00303,6.8,39.0,Bacharelado,Capitais,Híbrido,Não-binário,Amarela,0.1074790329191398
 CAND_00304,4.9,58.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Amarela,0.17965610965004963
-CAND_00305,5.4,37.0,Mestrado,Interior,Híbrido,Feminino,Parda,0.27286477009121507
+CAND_00305,5.4,37.0,Mestrado,Interior,Híbrido,Feminino,Parda,0.12286477009121505
 CAND_00306,8.8,50.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.8676411791700293
 CAND_00307,3.2,50.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.541323998666576
 CAND_00308,6.6,66.0,Bacharelado,Capitais,Presencial,Masculino,Preta,0.5302162490159741
@@ -329,9 +329,9 @@ CAND_00326,8.5,36.0,Mestrado,Capitais,Presencial,Masculino,Amarela,0.57534560400
 CAND_00327,7.4,48.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7585837628902753
 CAND_00328,6.9,32.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.5579871515954431
 CAND_00329,6.9,59.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0.6258923240089899
-CAND_00330,5.0,73.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6825789127618334
+CAND_00330,5.0,73.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.5325789127618334
 CAND_00331,2.3,68.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.6563856541951056
-CAND_00332,5.2,47.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.5379801289044528
+CAND_00332,5.2,47.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.3879801289044527
 CAND_00333,3.0,72.0,Mestrado,Região Metropolitana,Híbrido,Feminino,Branca,0.6178815670280476
 CAND_00334,7.9,52.0,Bacharelado,Interior,Remoto,Masculino,Branca,0.7608820108337715
 CAND_00335,4.6,45.0,Ensino Médio,Capitais,Presencial,Não-binário,Branca,0.34049180720910766
@@ -347,7 +347,7 @@ CAND_00344,3.6,64.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Amarela,0.
 CAND_00345,5.7,28.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.567420727655131
 CAND_00346,0.7,12.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.3898400305614961
 CAND_00347,0.8,64.0,Mestrado,Região Metropolitana,Presencial,Masculino,Amarela,0.32790183654750815
-CAND_00348,2.8,29.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.4178816306467672
+CAND_00348,2.8,29.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.2678816306467672
 CAND_00349,4.4,47.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.738768629451643
 CAND_00350,5.9,32.0,Bacharelado,Capitais,Presencial,Não-binário,Branca,0.20126575258591858
 CAND_00351,9.4,23.0,Ensino Médio,Região Metropolitana,Remoto,Masculino,Branca,0.6778457805666551
@@ -358,7 +358,7 @@ CAND_00355,2.0,11.0,Bacharelado,Capitais,Híbrido,Masculino,Preta,0.236877556408
 CAND_00356,4.9,42.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.5974902350578782
 CAND_00357,4.1,56.0,Ensino Médio,Capitais,Presencial,Feminino,Branca,0.5772129204233486
 CAND_00358,6.0,28.0,Doutorado,Capitais,Remoto,Masculino,Branca,0.6080411987474972
-CAND_00359,2.5,53.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.4727840338735009
+CAND_00359,2.5,53.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.32278403387350085
 CAND_00360,6.6,50.0,Bacharelado,Capitais,Remoto,Masculino,Amarela,0.642133016488955
 CAND_00361,9.6,59.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.899634008054041
 CAND_00362,4.7,52.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.9344698914323418
@@ -388,24 +388,24 @@ CAND_00385,5.5,54.0,Bacharelado,Capitais,Híbrido,Não-binário,Branca,0.4714877
 CAND_00386,6.0,70.0,Mestrado,Capitais,Híbrido,Masculino,Amarela,0.5574110096108851
 CAND_00387,10.6,73.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.6926333310918565
 CAND_00388,7.9,50.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.5936340470102883
-CAND_00389,3.3,39.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.5554919434996954
+CAND_00389,3.3,39.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.40549194349969536
 CAND_00390,2.3,57.0,Doutorado,Capitais,Remoto,Masculino,Branca,0.7771759456581451
 CAND_00391,6.5,40.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.6475673540613386
-CAND_00392,1.0,80.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.5967704820892671
+CAND_00392,1.0,80.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.44677048208926706
 CAND_00393,10.5,52.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Amarela,0.6952714733971266
 CAND_00394,8.5,45.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.3830519370796983
 CAND_00395,3.6,53.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.4619029891530104
 CAND_00396,0.0,30.0,Mestrado,Capitais,Remoto,Não-binário,Branca,0.5979963624223557
-CAND_00397,9.1,35.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.568200864501077
+CAND_00397,9.1,35.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.418200864501077
 CAND_00398,4.7,68.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.5806245325290241
 CAND_00399,8.7,40.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.7574476745001217
 CAND_00400,0.2,34.0,Bacharelado,Capitais,Remoto,Feminino,Amarela,0.0
 CAND_00401,3.2,58.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.5224726090027562
-CAND_00402,5.0,68.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.9865824925076488
+CAND_00402,5.0,68.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.8365824925076489
 CAND_00403,5.1,61.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.5415064077846599
 CAND_00404,3.6,65.0,Mestrado,Interior,Híbrido,Feminino,Branca,0.23380355142612871
 CAND_00405,6.9,39.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.3440818798042302
-CAND_00406,1.8,29.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.6418359568346986
+CAND_00406,1.8,29.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.49183595683469855
 CAND_00407,4.6,73.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.6464776719985813
 CAND_00408,5.4,45.0,Mestrado,Interior,Híbrido,Masculino,Branca,0.5367411203021492
 CAND_00409,6.5,46.0,Mestrado,Capitais,Híbrido,Masculino,Preta,0.5823212404001069
@@ -417,7 +417,7 @@ CAND_00414,6.0,40.0,Bacharelado,Capitais,Presencial,Masculino,Indígena,0.447912
 CAND_00415,2.8,64.0,Doutorado,Capitais,Remoto,Feminino,Preta,0.3193195805064743
 CAND_00416,9.7,51.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.822106120342161
 CAND_00417,5.3,54.0,Mestrado,Região Metropolitana,Presencial,Feminino,Branca,0.503214059899128
-CAND_00418,8.5,73.0,Mestrado,Capitais,Remoto,Feminino,Parda,0.7738894597930669
+CAND_00418,8.5,73.0,Mestrado,Capitais,Remoto,Feminino,Parda,0.6238894597930669
 CAND_00419,5.2,58.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.8634428426687581
 CAND_00420,11.2,58.0,Mestrado,Capitais,Remoto,Feminino,Preta,0.4388326346075216
 CAND_00421,10.3,66.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.7798484876051819
@@ -428,14 +428,14 @@ CAND_00425,9.1,21.0,Mestrado,Região Metropolitana,Remoto,Feminino,Branca,0.4732
 CAND_00426,2.1,81.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.9717811177097764
 CAND_00427,7.1,33.0,Ensino Médio,Interior,Híbrido,Não-binário,Branca,0.08015888332054408
 CAND_00428,8.2,47.0,Mestrado,Capitais,Presencial,Masculino,Preta,0.5004829100907983
-CAND_00429,0.0,46.0,Ensino Médio,Capitais,Presencial,Masculino,Parda,0.471348110304605
-CAND_00430,1.5,55.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.6939452690457991
+CAND_00429,0.0,46.0,Ensino Médio,Capitais,Presencial,Masculino,Parda,0.321348110304605
+CAND_00430,1.5,55.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.5439452690457991
 CAND_00431,0.0,62.0,Doutorado,Capitais,Presencial,Masculino,Branca,0.8747960487103089
 CAND_00432,4.2,63.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.4835601432763843
 CAND_00433,7.2,41.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.5157770350493792
 CAND_00434,9.5,47.0,Mestrado,Capitais,Híbrido,Não-binário,Amarela,0.4622513896455005
-CAND_00435,5.2,54.0,Mestrado,Capitais,Remoto,Masculino,Parda,0.7954958766141964
-CAND_00436,9.9,46.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.4878141340620594
+CAND_00435,5.2,54.0,Mestrado,Capitais,Remoto,Masculino,Parda,0.6454958766141965
+CAND_00436,9.9,46.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.3378141340620594
 CAND_00437,0.9,74.0,Doutorado,Interior,Presencial,Masculino,Branca,0.6636195866329201
 CAND_00438,0.0,57.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.4189858169319701
 CAND_00439,4.8,61.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.4735348902497938
@@ -453,8 +453,8 @@ CAND_00450,4.8,55.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7681449399059
 CAND_00451,7.9,76.0,Mestrado,Capitais,Híbrido,Masculino,Preta,0.7956969073555962
 CAND_00452,2.0,54.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.44777463003285467
 CAND_00453,6.5,89.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Branca,0.9166450862963342
-CAND_00454,3.4,58.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.3562262677595675
-CAND_00455,2.6,24.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.3161989882622798
+CAND_00454,3.4,58.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.20622626775956748
+CAND_00455,2.6,24.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.16619898826227977
 CAND_00456,4.7,61.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7819486048008512
 CAND_00457,1.9,56.0,Mestrado,Capitais,Presencial,Não-binário,Branca,0.45216901525456243
 CAND_00458,3.3,69.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.6116249515907504
@@ -462,7 +462,7 @@ CAND_00459,1.4,60.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.65114708963
 CAND_00460,10.9,48.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca,0.5964561477355458
 CAND_00461,5.1,32.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.511982652365205
 CAND_00462,2.9,47.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.3175612963927486
-CAND_00463,5.6,37.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.5575879150503965
+CAND_00463,5.6,37.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.4075879150503965
 CAND_00464,4.7,41.0,Bacharelado,Região Metropolitana,Híbrido,Não-binário,Branca,0.40714455108944025
 CAND_00465,4.3,59.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.699091896907829
 CAND_00466,6.8,75.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.6722967116852513
@@ -472,9 +472,9 @@ CAND_00469,3.3,57.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,
 CAND_00470,4.2,68.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.6509412932999294
 CAND_00471,0.0,41.0,Mestrado,Capitais,Remoto,Masculino,Preta,0.4149689231224656
 CAND_00472,0.5,48.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5205601812553676
-CAND_00473,9.1,50.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.6820843030280379
+CAND_00473,9.1,50.0,Bacharelado,Capitais,Híbrido,Feminino,Parda,0.5320843030280378
 CAND_00474,9.9,38.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Indígena,0.4852800534896725
-CAND_00475,4.3,60.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.5793425928797223
+CAND_00475,4.3,60.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.4293425928797223
 CAND_00476,6.7,48.0,Ensino Médio,Região Metropolitana,Remoto,Masculino,Preta,0.31313297529691403
 CAND_00477,5.9,56.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.43018668013077227
 CAND_00478,14.2,37.0,Mestrado,Capitais,Presencial,Feminino,Branca,0.5338419228448631
@@ -486,12 +486,12 @@ CAND_00483,5.6,44.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.65988359575
 CAND_00484,2.7,53.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.5665337147647349
 CAND_00485,0.7,64.0,Bacharelado,Interior,Híbrido,Masculino,Branca,0.5727839349915588
 CAND_00486,3.1,29.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.1880329719141118
-CAND_00487,1.8,24.0,Bacharelado,Interior,Híbrido,Masculino,Parda,0.319173651951617
+CAND_00487,1.8,24.0,Bacharelado,Interior,Híbrido,Masculino,Parda,0.16917365195161693
 CAND_00488,10.1,27.0,Bacharelado,Interior,Híbrido,Feminino,Branca,0.22166592230283907
 CAND_00489,7.6,69.0,Doutorado,Região Metropolitana,Remoto,Feminino,Branca,0.7681728697140273
 CAND_00490,5.0,42.0,Ensino Médio,Região Metropolitana,Remoto,Masculino,Branca,0.6464146416353499
 CAND_00491,9.4,88.0,Bacharelado,Capitais,Remoto,Feminino,Preta,0.40019727736755417
-CAND_00492,5.2,42.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.49539547975996007
+CAND_00492,5.2,42.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.34539547975996004
 CAND_00493,2.4,53.0,Doutorado,Capitais,Híbrido,Masculino,Branca,0.7138732949501693
 CAND_00494,9.6,73.0,Bacharelado,Capitais,Presencial,Masculino,Preta,0.40872066052686606
 CAND_00495,6.6,80.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.8355968173440577
@@ -507,14 +507,14 @@ CAND_00504,3.0,47.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Amare
 CAND_00505,3.5,43.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.6544175684744613
 CAND_00506,3.2,60.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0.4159236596138195
 CAND_00507,2.4,64.0,Doutorado,Capitais,Híbrido,Masculino,Branca,0.6770534733987188
-CAND_00508,5.1,51.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.5891699576828359
+CAND_00508,5.1,51.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Parda,0.4391699576828358
 CAND_00509,2.5,72.0,Ensino Médio,Capitais,Presencial,Masculino,Branca,0.7479103331863595
 CAND_00510,5.8,33.0,Ensino Médio,Região Metropolitana,Híbrido,Feminino,Amarela,0.027224060745664705
 CAND_00511,4.8,47.0,Doutorado,Interior,Híbrido,Feminino,Amarela,0.3149112790731379
 CAND_00512,4.3,39.0,Bacharelado,Capitais,Remoto,Masculino,Amarela,0.3570279078522304
 CAND_00513,2.3,22.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.4357016073927159
 CAND_00514,3.3,49.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Preta,0.4150683123010048
-CAND_00515,7.3,48.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6216563842780511
+CAND_00515,7.3,48.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.47165638427805123
 CAND_00516,6.5,73.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.7757574859335866
 CAND_00517,2.1,59.0,Bacharelado,Capitais,Presencial,Feminino,Preta,0.19653091712119078
 CAND_00518,5.3,35.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.6089368006703818
@@ -532,7 +532,7 @@ CAND_00529,2.3,33.0,Bacharelado,Capitais,Presencial,Masculino,Preta,0.2947420620
 CAND_00530,6.9,52.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.7663140197236049
 CAND_00531,0.0,23.0,Mestrado,Capitais,Híbrido,Masculino,Preta,0.5418430483721495
 CAND_00532,4.8,55.0,Mestrado,Região Metropolitana,Presencial,Masculino,Branca,0.6931994273190282
-CAND_00533,1.4,48.0,Mestrado,Capitais,Presencial,Não-binário,Parda,0.22930225378960117
+CAND_00533,1.4,48.0,Mestrado,Capitais,Presencial,Não-binário,Parda,0.07930225378960115
 CAND_00534,3.0,43.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.6222268077201298
 CAND_00535,5.1,26.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.688099578954071
 CAND_00536,2.4,58.0,Mestrado,Capitais,Presencial,Masculino,Preta,0.4908014120979501
@@ -547,7 +547,7 @@ CAND_00544,0.0,41.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.30735510246905
 CAND_00545,2.6,57.0,Mestrado,Interior,Presencial,Masculino,Branca,0.544192055382068
 CAND_00546,6.7,35.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.7967273822081263
 CAND_00547,4.4,55.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.3869839497019116
-CAND_00548,6.1,61.0,Doutorado,Capitais,Remoto,Masculino,Parda,0.8598579290921006
+CAND_00548,6.1,61.0,Doutorado,Capitais,Remoto,Masculino,Parda,0.7098579290921005
 CAND_00549,3.2,68.0,Bacharelado,Capitais,Presencial,Feminino,Branca,0.39899733726355713
 CAND_00550,5.3,48.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.7545376272259603
 CAND_00551,4.5,47.0,Bacharelado,Capitais,Presencial,Feminino,Amarela,0.25219544843888386
@@ -567,7 +567,7 @@ CAND_00564,8.6,61.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.395665195289264
 CAND_00565,3.8,46.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.643935581275622
 CAND_00566,0.0,51.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.5191842603182687
 CAND_00567,2.0,58.0,Mestrado,Capitais,Híbrido,Feminino,Amarela,0.3145073443881552
-CAND_00568,0.0,27.0,Mestrado,Interior,Híbrido,Feminino,Parda,0.12113806342143005
+CAND_00568,0.0,27.0,Mestrado,Interior,Híbrido,Feminino,Parda,0.0
 CAND_00569,3.9,42.0,Ensino Médio,Capitais,Híbrido,Não-binário,Branca,0.4267046416606688
 CAND_00570,5.1,62.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.6119687778553381
 CAND_00571,10.0,31.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca,0.5023053162258654
@@ -593,20 +593,20 @@ CAND_00590,5.2,34.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Preta,0.
 CAND_00591,3.6,6.0,Ensino Médio,Capitais,Remoto,Feminino,Branca,0.2090681229841811
 CAND_00592,6.4,57.0,Bacharelado,Capitais,Híbrido,Masculino,Amarela,0.39805637012824013
 CAND_00593,6.0,64.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.7442108157861496
-CAND_00594,8.1,15.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6111209327237395
+CAND_00594,8.1,15.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.4611209327237394
 CAND_00595,3.5,35.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.4181781770628362
 CAND_00596,4.2,59.0,Bacharelado,Interior,Híbrido,Feminino,Amarela,0.1683776882404058
 CAND_00597,2.1,81.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Preta,0.581683378103699
-CAND_00598,3.7,50.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.7137397023459234
+CAND_00598,3.7,50.0,Mestrado,Capitais,Híbrido,Masculino,Parda,0.5637397023459234
 CAND_00599,6.1,39.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.6032544346041788
 CAND_00600,7.3,47.0,Mestrado,Região Metropolitana,Híbrido,Feminino,Branca,0.5059497946588383
 CAND_00601,2.2,71.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Preta,0.08771338427921452
-CAND_00602,7.6,40.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6511861009608585
+CAND_00602,7.6,40.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.5011861009608585
 CAND_00603,9.1,38.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.8452100619221339
 CAND_00604,6.2,43.0,Mestrado,Região Metropolitana,Remoto,Masculino,Indígena,0.6145290084710968
 CAND_00605,10.6,36.0,Bacharelado,Capitais,Remoto,Masculino,Amarela,0.6962009325919123
 CAND_00606,2.7,52.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6317114756201008
-CAND_00607,1.3,74.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.8066099794514257
+CAND_00607,1.3,74.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6566099794514257
 CAND_00608,0.0,55.0,Mestrado,Capitais,Presencial,Feminino,Branca,0.450669577355203
 CAND_00609,9.5,46.0,Ensino Médio,Região Metropolitana,Remoto,Feminino,Branca,0.6211585082569894
 CAND_00610,7.0,46.0,Mestrado,Interior,Híbrido,Masculino,Branca,0.6218143252557876
@@ -628,13 +628,13 @@ CAND_00625,3.5,66.0,Bacharelado,Capitais,Presencial,Feminino,Preta,0.10469236020
 CAND_00626,2.0,43.0,Ensino Médio,Região Metropolitana,Híbrido,Masculino,Branca,0.483209392313208
 CAND_00627,4.6,69.0,Bacharelado,Interior,Remoto,Masculino,Branca,0.6425038664315406
 CAND_00628,5.2,51.0,Bacharelado,Capitais,Remoto,Masculino,Indígena,0.5310048103174836
-CAND_00629,8.3,63.0,Mestrado,Região Metropolitana,Presencial,Masculino,Parda,0.6136549056814253
+CAND_00629,8.3,63.0,Mestrado,Região Metropolitana,Presencial,Masculino,Parda,0.46365490568142537
 CAND_00630,0.0,57.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.8374177956204012
 CAND_00631,9.6,37.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7503538153949175
 CAND_00632,4.5,40.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7931152117761742
 CAND_00633,3.7,65.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.6579963749819555
-CAND_00634,2.0,45.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.43199880183092365
-CAND_00635,0.0,44.0,Bacharelado,Capitais,Remoto,Não-binário,Parda,0.302918092025516
+CAND_00634,2.0,45.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.28199880183092363
+CAND_00635,0.0,44.0,Bacharelado,Capitais,Remoto,Não-binário,Parda,0.15291809202551598
 CAND_00636,7.5,36.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.6724212873671781
 CAND_00637,5.2,56.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Amarela,0.16022385420086427
 CAND_00638,1.1,81.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.6929784258787497
@@ -645,10 +645,10 @@ CAND_00642,4.2,49.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0
 CAND_00643,0.5,57.0,Mestrado,Região Metropolitana,Remoto,Feminino,Branca,0.37721761073843757
 CAND_00644,4.3,34.0,Doutorado,Capitais,Remoto,Feminino,Branca,0.3454612412970026
 CAND_00645,4.2,56.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.6320941486596992
-CAND_00646,0.0,47.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Parda,0.15905194127903122
+CAND_00646,0.0,47.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Parda,0.009051941279031195
 CAND_00647,4.8,65.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.761844948070565
 CAND_00648,4.3,68.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.8992620322540441
-CAND_00649,7.1,89.0,Mestrado,Capitais,Presencial,Feminino,Parda,0.7401716933003096
+CAND_00649,7.1,89.0,Mestrado,Capitais,Presencial,Feminino,Parda,0.5901716933003096
 CAND_00650,10.5,59.0,Bacharelado,Capitais,Híbrido,Masculino,Amarela,0.6400345688007809
 CAND_00651,8.4,55.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Amarela,0.36783341417125837
 CAND_00652,4.2,53.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0.3650275164232717
@@ -660,7 +660,7 @@ CAND_00657,4.9,70.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.724250288580010
 CAND_00658,5.6,35.0,Mestrado,Capitais,Remoto,Masculino,Branca,0.5793820642187316
 CAND_00659,4.6,67.0,Mestrado,Capitais,Híbrido,Masculino,Branca,1.0
 CAND_00660,3.3,70.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.822747934455413
-CAND_00661,3.4,48.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.6098285846330938
+CAND_00661,3.4,48.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.4598285846330936
 CAND_00662,4.9,18.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.6789536583076641
 CAND_00663,3.4,41.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.8685407771999973
 CAND_00664,2.9,69.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.590127989894313
@@ -691,7 +691,7 @@ CAND_00688,7.1,54.0,Bacharelado,Capitais,Híbrido,Feminino,Preta,0.2226504519938
 CAND_00689,6.3,46.0,Doutorado,Região Metropolitana,Híbrido,Feminino,Amarela,0.293056308636651
 CAND_00690,3.9,59.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Preta,0.11616920501775017
 CAND_00691,8.5,43.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.7218480087138118
-CAND_00692,1.8,63.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.44329052285994813
+CAND_00692,1.8,63.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Parda,0.2932905228599481
 CAND_00693,6.8,30.0,Bacharelado,Capitais,Híbrido,Masculino,Amarela,0.3623407993756358
 CAND_00694,6.8,52.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.8046231558859969
 CAND_00695,4.1,79.0,Bacharelado,Capitais,Remoto,Feminino,Branca,0.618069869428888
@@ -700,7 +700,7 @@ CAND_00697,1.2,40.0,Bacharelado,Interior,Híbrido,Feminino,Branca,0.199552279124
 CAND_00698,7.8,58.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.4630584013043027
 CAND_00699,4.4,53.0,Bacharelado,Capitais,Remoto,Feminino,Amarela,0.3337766099054602
 CAND_00700,3.4,55.0,Mestrado,Capitais,Híbrido,Feminino,Branca,0.483491277000441
-CAND_00701,8.1,57.0,Bacharelado,Interior,Híbrido,Masculino,Parda,0.7716755629575105
+CAND_00701,8.1,57.0,Bacharelado,Interior,Híbrido,Masculino,Parda,0.6216755629575106
 CAND_00702,2.9,60.0,Bacharelado,Capitais,Híbrido,Masculino,Amarela,0.37107088947568956
 CAND_00703,0.8,67.0,Bacharelado,Capitais,Remoto,Masculino,Amarela,0.6376156772854946
 CAND_00704,0.3,56.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6188681151202199
@@ -715,7 +715,7 @@ CAND_00712,3.4,17.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.410649398
 CAND_00713,6.2,63.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.5045045161921049
 CAND_00714,4.9,42.0,Bacharelado,Capitais,Híbrido,Masculino,Preta,0.45457499681816954
 CAND_00715,8.3,49.0,Ensino Médio,Capitais,Presencial,Não-binário,Branca,0.5322659998499306
-CAND_00716,5.3,55.0,Mestrado,Região Metropolitana,Remoto,Feminino,Parda,0.5000876757200408
+CAND_00716,5.3,55.0,Mestrado,Região Metropolitana,Remoto,Feminino,Parda,0.3500876757200408
 CAND_00717,5.5,53.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.6054306535106453
 CAND_00718,3.9,61.0,Bacharelado,Região Metropolitana,Presencial,Não-binário,Branca,0.4589016437825167
 CAND_00719,4.8,43.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6804285694850851
@@ -729,7 +729,7 @@ CAND_00726,5.1,42.0,Mestrado,Região Metropolitana,Híbrido,Masculino,Branca,0.6
 CAND_00727,6.0,62.0,Mestrado,Capitais,Presencial,Feminino,Amarela,0.44480504275897537
 CAND_00728,3.4,56.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.8135174390128058
 CAND_00729,2.7,78.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.7608881306984623
-CAND_00730,5.6,47.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.45161247879004723
+CAND_00730,5.6,47.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.3016124787900472
 CAND_00731,2.1,45.0,Mestrado,Capitais,Híbrido,Masculino,Preta,0.4363306305000005
 CAND_00732,6.2,50.0,Bacharelado,Capitais,Remoto,Feminino,Branca,0.47240946868676603
 CAND_00733,0.0,45.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.4374607742357044
@@ -740,7 +740,7 @@ CAND_00737,7.9,34.0,Ensino Médio,Capitais,Remoto,Masculino,Branca,0.57370885619
 CAND_00738,10.0,64.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.582219296257406
 CAND_00739,8.0,76.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.9606431287412318
 CAND_00740,0.0,48.0,Mestrado,Capitais,Presencial,Não-binário,Amarela,0.24406894964226689
-CAND_00741,1.2,47.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.4040467147833961
+CAND_00741,1.2,47.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.2540467147833961
 CAND_00742,3.1,51.0,Ensino Médio,Capitais,Presencial,Masculino,Preta,0.4657059356453641
 CAND_00743,5.1,67.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.9327350089355486
 CAND_00744,6.6,36.0,Bacharelado,Capitais,Presencial,Não-binário,Branca,0.31301501427814393
@@ -757,9 +757,9 @@ CAND_00754,2.2,58.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.
 CAND_00755,12.9,71.0,Bacharelado,Capitais,Remoto,Feminino,Amarela,0.5129546083772212
 CAND_00756,6.5,48.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.7792541799572759
 CAND_00757,5.6,64.0,Bacharelado,Capitais,Híbrido,Masculino,Amarela,0.7108760162036771
-CAND_00758,2.4,74.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.8374309669352076
+CAND_00758,2.4,74.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.6874309669352077
 CAND_00759,7.1,70.0,Ensino Médio,Região Metropolitana,Híbrido,Masculino,Branca,0.7504754593385567
-CAND_00760,3.3,75.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.46967108521610257
+CAND_00760,3.3,75.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Parda,0.31967108521610255
 CAND_00761,5.4,61.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.5480824865403865
 CAND_00762,12.7,51.0,Mestrado,Capitais,Híbrido,Masculino,Indígena,0.8628399887813542
 CAND_00763,4.7,26.0,Bacharelado,Interior,Híbrido,Masculino,Branca,0.4398932894564582
@@ -806,7 +806,7 @@ CAND_00803,3.6,27.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.6292014280566
 CAND_00804,3.7,23.0,Mestrado,Capitais,Presencial,Masculino,Branca,0.8224220134852411
 CAND_00805,4.1,26.0,Bacharelado,Interior,Híbrido,Masculino,Branca,0.45180948758668094
 CAND_00806,5.7,54.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.6119739717258096
-CAND_00807,3.6,58.0,Ensino Médio,Região Metropolitana,Híbrido,Não-binário,Parda,0.28445273564140267
+CAND_00807,3.6,58.0,Ensino Médio,Região Metropolitana,Híbrido,Não-binário,Parda,0.13445273564140264
 CAND_00808,8.8,26.0,Bacharelado,Capitais,Presencial,Masculino,Indígena,0.5597227221585087
 CAND_00809,2.3,63.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Amarela,0.6147256841749533
 CAND_00810,4.4,43.0,Mestrado,Capitais,Remoto,Feminino,Branca,0.29760071818743644
@@ -814,7 +814,7 @@ CAND_00811,3.7,52.0,Bacharelado,Capitais,Híbrido,Feminino,Amarela,0.32336162575
 CAND_00812,9.3,74.0,Mestrado,Capitais,Híbrido,Masculino,Preta,0.8955586730077365
 CAND_00813,5.6,63.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.7422034219209342
 CAND_00814,8.1,46.0,Bacharelado,Região Metropolitana,Híbrido,Masculino,Branca,0.8610572963232848
-CAND_00815,0.5,37.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.4450787850470558
+CAND_00815,0.5,37.0,Bacharelado,Capitais,Híbrido,Masculino,Parda,0.29507878504705576
 CAND_00816,5.8,18.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.6347952505836286
 CAND_00817,7.7,39.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.6633524702388589
 CAND_00818,5.2,47.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.470240892064123
@@ -843,7 +843,7 @@ CAND_00840,4.9,48.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.619979874
 CAND_00841,7.0,22.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.7679227950071159
 CAND_00842,1.6,42.0,Bacharelado,Capitais,Presencial,Masculino,Preta,0.503914234581065
 CAND_00843,6.1,51.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.9332398210270327
-CAND_00844,5.5,52.0,Mestrado,Região Metropolitana,Remoto,Feminino,Parda,0.4397874223066089
+CAND_00844,5.5,52.0,Mestrado,Região Metropolitana,Remoto,Feminino,Parda,0.28978742230660887
 CAND_00845,6.5,35.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.5930702904984471
 CAND_00846,5.9,69.0,Mestrado,Interior,Remoto,Não-binário,Branca,0.34910471722313224
 CAND_00847,12.4,37.0,Doutorado,Região Metropolitana,Híbrido,Masculino,Branca,0.755309712527794
@@ -864,7 +864,7 @@ CAND_00861,0.5,62.0,Ensino Médio,Capitais,Híbrido,Feminino,Branca,0.4258529169
 CAND_00862,9.6,62.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.6435463961897074
 CAND_00863,10.4,24.0,Bacharelado,Capitais,Presencial,Masculino,Branca,0.5558854275378284
 CAND_00864,3.2,70.0,Ensino Médio,Região Metropolitana,Remoto,Feminino,Branca,0.4437631083867191
-CAND_00865,3.8,25.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.4216393103906948
+CAND_00865,3.8,25.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Parda,0.2716393103906948
 CAND_00866,5.9,65.0,Mestrado,Capitais,Presencial,Masculino,Branca,1.0
 CAND_00867,6.0,67.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.9713896546024376
 CAND_00868,7.0,34.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5892077537248847
@@ -917,11 +917,11 @@ CAND_00914,4.7,23.0,Bacharelado,Interior,Presencial,Feminino,Amarela,0.0
 CAND_00915,5.8,42.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5517652565316705
 CAND_00916,6.8,38.0,Bacharelado,Região Metropolitana,Presencial,Feminino,Branca,0.4789064938334058
 CAND_00917,5.6,41.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.792662788345689
-CAND_00918,3.7,47.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.47700743621387276
+CAND_00918,3.7,47.0,Bacharelado,Capitais,Remoto,Masculino,Parda,0.32700743621387274
 CAND_00919,5.6,43.0,Bacharelado,Capitais,Remoto,Masculino,Preta,0.38848010951838413
 CAND_00920,8.2,20.0,Mestrado,Interior,Remoto,Feminino,Preta,0.0
 CAND_00921,1.9,61.0,Bacharelado,Região Metropolitana,Híbrido,Feminino,Branca,0.3421200189756163
-CAND_00922,5.4,34.0,Ensino Médio,Interior,Híbrido,Feminino,Parda,0.24910170602262996
+CAND_00922,5.4,34.0,Ensino Médio,Interior,Híbrido,Feminino,Parda,0.09910170602262994
 CAND_00923,2.9,54.0,Mestrado,Interior,Híbrido,Feminino,Branca,0.30065179333217207
 CAND_00924,8.6,81.0,Bacharelado,Capitais,Presencial,Feminino,Amarela,0.46591740439677026
 CAND_00925,0.4,36.0,Bacharelado,Capitais,Remoto,Não-binário,Branca,0.13926882720526843
@@ -940,7 +940,7 @@ CAND_00937,7.1,57.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Preta,0.8
 CAND_00938,5.7,66.0,Bacharelado,Capitais,Presencial,Não-binário,Branca,0.40355135501111344
 CAND_00939,3.3,51.0,Ensino Médio,Capitais,Híbrido,Masculino,Indígena,0.514982721372651
 CAND_00940,1.2,55.0,Ensino Médio,Região Metropolitana,Híbrido,Masculino,Branca,0.4732447714705894
-CAND_00941,7.6,44.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.42412096954232903
+CAND_00941,7.6,44.0,Bacharelado,Capitais,Remoto,Feminino,Parda,0.274120969542329
 CAND_00942,7.0,54.0,Ensino Médio,Capitais,Presencial,Feminino,Branca,0.43397879789932103
 CAND_00943,4.7,45.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.5114345032199417
 CAND_00944,10.5,59.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.8918708638215339
@@ -952,7 +952,7 @@ CAND_00949,5.7,49.0,Mestrado,Capitais,Remoto,Masculino,Amarela,0.513381138805377
 CAND_00950,4.3,23.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5412796065788252
 CAND_00951,6.1,69.0,Mestrado,Capitais,Híbrido,Feminino,Preta,0.42675639051673275
 CAND_00952,1.2,36.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.4515949367594174
-CAND_00953,9.3,40.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.7102009565586664
+CAND_00953,9.3,40.0,Mestrado,Capitais,Presencial,Masculino,Parda,0.5602009565586665
 CAND_00954,4.8,41.0,Doutorado,Capitais,Presencial,Masculino,Branca,0.6740386486121546
 CAND_00955,8.4,71.0,Ensino Médio,Capitais,Híbrido,Masculino,Branca,0.7129431189408986
 CAND_00956,6.0,18.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.43101617593743585
@@ -961,15 +961,15 @@ CAND_00958,6.7,66.0,Doutorado,Região Metropolitana,Híbrido,Feminino,Branca,0.5
 CAND_00959,6.3,53.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.654337605516355
 CAND_00960,6.9,49.0,Mestrado,Capitais,Presencial,Feminino,Preta,0.44087923213942926
 CAND_00961,9.0,54.0,Ensino Médio,Interior,Híbrido,Feminino,Amarela,0.06740002934835057
-CAND_00962,5.6,58.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.5851588764327154
+CAND_00962,5.6,58.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.43515887643271545
 CAND_00963,7.1,60.0,Ensino Médio,Capitais,Remoto,Feminino,Indígena,0.6380502959355683
 CAND_00964,4.7,58.0,Doutorado,Capitais,Remoto,Feminino,Branca,0.8010925941927145
 CAND_00965,9.3,51.0,Mestrado,Região Metropolitana,Remoto,Feminino,Branca,0.5868481486671897
 CAND_00966,3.0,47.0,Mestrado,Capitais,Presencial,Masculino,Preta,0.47373731064173497
-CAND_00967,10.4,48.0,Mestrado,Capitais,Remoto,Masculino,Parda,0.7369153597052812
+CAND_00967,10.4,48.0,Mestrado,Capitais,Remoto,Masculino,Parda,0.5869153597052813
 CAND_00968,4.9,47.0,Ensino Médio,Capitais,Remoto,Feminino,Branca,0.47923527142003397
 CAND_00969,0.7,67.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.3602818099277529
-CAND_00970,5.4,59.0,Ensino Médio,Capitais,Presencial,Não-binário,Parda,0.1907646235701615
+CAND_00970,5.4,59.0,Ensino Médio,Capitais,Presencial,Não-binário,Parda,0.04076462357016147
 CAND_00971,3.0,6.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.3518444213488949
 CAND_00972,7.5,60.0,Bacharelado,Região Metropolitana,Remoto,Masculino,Branca,0.7421092747850587
 CAND_00973,3.0,53.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5588932764497413
@@ -985,9 +985,9 @@ CAND_00982,2.1,41.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.75065632912
 CAND_00983,4.9,63.0,Mestrado,Capitais,Presencial,Feminino,Branca,0.5540140737684861
 CAND_00984,5.0,64.0,Bacharelado,Capitais,Híbrido,Feminino,Branca,0.5130365021472492
 CAND_00985,1.5,58.0,Bacharelado,Capitais,Remoto,Masculino,Branca,0.5318890733608654
-CAND_00986,9.5,61.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.741101928262758
+CAND_00986,9.5,61.0,Bacharelado,Capitais,Presencial,Masculino,Parda,0.5911019282627581
 CAND_00987,7.6,58.0,Bacharelado,Capitais,Presencial,Masculino,Preta,0.6304769894302447
-CAND_00988,4.3,40.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.5259987372262134
+CAND_00988,4.3,40.0,Bacharelado,Capitais,Presencial,Feminino,Parda,0.3759987372262134
 CAND_00989,5.1,56.0,Bacharelado,Região Metropolitana,Remoto,Feminino,Branca,0.5720305168086669
 CAND_00990,5.6,62.0,Bacharelado,Capitais,Híbrido,Masculino,Branca,0.5805808133450564
 CAND_00991,0.0,61.0,Ensino Médio,Capitais,Híbrido,Feminino,Branca,0.5023145212660733
@@ -997,5 +997,5 @@ CAND_00994,2.0,55.0,Bacharelado,Capitais,Remoto,Não-binário,Branca,0.373221547
 CAND_00995,4.2,66.0,Bacharelado,Capitais,Remoto,Masculino,Indígena,0.6682533313933855
 CAND_00996,10.4,50.0,Mestrado,Capitais,Híbrido,Masculino,Branca,0.7247551652105435
 CAND_00997,6.9,37.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.7531167632706148
-CAND_00998,3.3,48.0,Ensino Médio,Capitais,Presencial,Masculino,Parda,0.41150252538951115
+CAND_00998,3.3,48.0,Ensino Médio,Capitais,Presencial,Masculino,Parda,0.2615025253895111
 CAND_00999,6.7,39.0,Bacharelado,Região Metropolitana,Presencial,Masculino,Branca,0.5731545089146823

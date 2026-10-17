@@ -179,3 +179,5 @@ data/final/*
 
 # Local backups
 .git_old/
+paper.tex
+relatorio_geradores.md

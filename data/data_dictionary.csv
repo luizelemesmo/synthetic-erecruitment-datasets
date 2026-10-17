@@ -1,0 +1,10 @@
+feature_name,type,description,sensitive
+id,string,Unique identifier for the candidate,no
+skills,integer,Quantitative measure of the candidate's skills (0-100),no
+years_experience,float,Number of years of professional experience,no
+education_level,categorical,Highest education level attained (High School / Bachelors / Masters / PhD),no
+location,categorical,Geographic location category of the candidate (Urban / Suburban / Rural),no
+preferred_work_mode,categorical,Preferred work arrangement (on-site / hybrid / remote),no
+gender,categorical,"Candidate's self-identified gender (Male, Female, Non-binary)",yes
+race,categorical,"Candidate's self-identified race (White, Black, Asian, Hispanic, Other)",yes
+suitability_score,float,Continuous score (0-1) reflecting candidate suitability for a role,no

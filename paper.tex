@@ -1,0 +1,150 @@
+\documentclass[12pt]{article}
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\sloppy
+
+\title{Um Dataset Sintético Multi-Cenário para Avaliação de Fairness em Sistemas de Recomendação de Recrutamento}
+
+\author{Luiz Henrique\inst{1}}
+
+\address{
+  Departamento de Ciência da Computação -- Universidade Federal... (Ajustar instituição)\\
+  \email{luiz@exemplo.com}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The widespread adoption of AI-driven recommendation systems in e-recruitment has raised significant concerns regarding algorithmic fairness and bias against minority demographic groups. The lack of standardized, publicly available datasets that incorporate both objective suitability metrics and explicit bias scenarios hinders the development and evaluation of debiasing techniques. In this Dataset Showcase paper, we present a synthetic, multi-scenario dataset for e-recruitment. The dataset features explicit control over bias injection across multiple demographic intersections (gender, race, and location) and is available in various sizes (1k, 5k, 10k) and bias conditions (debiased, biased, extreme bias). We describe the controlled generation methodology and demonstrate its utility for benchmarking fairness-aware algorithms in human resources applications.
+\end{abstract}
+
+\begin{resumo}
+A ampla adoção de sistemas de recomendação baseados em IA no recrutamento eletrônico (e-recruitment) levantou preocupações significativas sobre justiça algorítmica (fairness) e viés contra grupos demográficos minoritários. A falta de conjuntos de dados padronizados e publicamente disponíveis que incorporem métricas objetivas de adequação e cenários explícitos de viés dificulta o desenvolvimento e a avaliação de técnicas de mitigação. Neste artigo de Dataset Showcase, apresentamos um dataset sintético de múltiplos cenários para e-recruitment. O dataset possui controle explícito sobre a injeção de viés em múltiplas interseções demográficas (gênero, raça e localização) e está disponível em vários tamanhos (1k, 5k, 10k) e condições de viés (sem viés, com viés e com viés extremo). Descrevemos a metodologia de geração controlada e demonstramos sua utilidade para a avaliação comparativa (benchmarking) de algoritmos focados em fairness em aplicações de recursos humanos.
+\end{resumo}
+
+\section{Introdução}
+
+Sistemas de recomendação em \textit{e-recruitment} automatizam a triagem de candidatos, mas frequentemente herdam vieses históricos dos dados de treinamento, discriminando grupos minoritários. A literatura recente em \textit{Machine Learning} destaca a urgência de auditar e mitigar tais vieses, promovendo a justiça algorítmica (\textit{fairness}).
+
+O principal obstáculo para essa pesquisa é a escassez de dados reais. Devido a regulações de privacidade (ex.: LGPD, GDPR), datasets corporativos raramente expõem atributos demográficos atrelados a avaliações objetivas de desempenho. Quando disponíveis, refletem um nível estático de viés, impedindo \textit{stress tests} sob variadas magnitudes de disparidade.
+
+Para preencher essa lacuna, este trabalho apresenta um dataset sintético de \textit{e-recruitment} focado na avaliação de \textit{fairness}. A contribuição central deste \textit{Dataset Showcase} é um artefato de dados com controle explícito de injeção de viés. Ele abrange cenários desde ambientes ideais (sem viés) até condições de discriminação extrema, provendo partições de diferentes tamanhos (1k, 5k e 10k) para análises de escalabilidade.
+
+O artigo está estruturado da seguinte forma: a Seção 2 aborda trabalhos relacionados; a Seção 3 descreve a estrutura do dataset; a Seção 4 detalha a metodologia de geração; a Seção 5 analisa as distribuições obtidas; a Seção 6 sugere aplicações; e a Seção 7 conclui o trabalho.
+
+\section{Trabalhos Relacionados}
+
+A pesquisa em \textit{fairness} aplicada a sistemas de recomendação tradicionalmente foca na mitigação de viés algorítmico, seja através de intervenções de pré-processamento, in-processing ou pós-processamento, visando satisfazer restrições como paridade estatística ou igualdade de oportunidades \cite{mehrabi2021survey}. Contudo, o desenvolvimento e a validação empírica desses métodos em domínios críticos, como o recrutamento eletrônico, esbarram na crônica indisponibilidade de conjuntos de dados reais que contenham anotações demográficas e avaliações objetivas e imparciais \cite{cowgill2020bias}.
+
+No contexto de geração de datasets sintéticos para preencher essa lacuna, a maior parte dos trabalhos utiliza redes adversariais generativas (GANs). Modelos como o FairGAN \cite{xu2018fairgan} e suas variantes \cite{choi2020fair} foram propostos para gerar dados artificiais que preservem a distribuição estatística original ao mesmo tempo em que garantem a independência entre os atributos sensíveis e a variável alvo. Embora úteis, abordagens puramente baseadas em \textit{Deep Learning} operam intrinsecamente como "caixas pretas". Elas dificultam o controle determinístico, transparente e granulado da intensidade do viés inserido nos dados, uma característica essencial para o \textit{stress testing} de algoritmos de \textit{fairness} e para a compreensão de suas falhas de borda (\textit{edge cases}).
+
+Diferenciando-se das abordagens generativas neurais, nosso trabalho posiciona-se como um recurso estrutural. A principal lacuna na área de \textit{e-recruitment} é a ausência de um \textit{dataset benchmark} que combine: (1) atributos sensíveis multivariados e interseccionais (raça, gênero, localidade); (2) um \textit{ground truth} matemático claro e imutável para a adequabilidade técnica do candidato; e (3) a provisão de cenários controlados que representam desde um ambiente utópico (livre de viés) até condições de discriminação severa. Ao fornecer uma metodologia gerativa baseada em regras explícitas, o dataset proposto atua não apenas como um artefato de dados, mas como uma ferramenta de diagnóstico transparente, permitindo que pesquisadores isolem, mensurem e comparem a eficácia dos algoritmos de recomendação frente a dinâmicas de viés perfeitamente conhecidas e parametrizadas.
+
+\section{Descrição do Dataset}
+
+O dataset atua como um ambiente simulado para análise de discriminação algorítmica no recrutamento de profissionais de tecnologia, modelando características técnicas e demográficas dos candidatos.
+
+\subsection{Estrutura dos Dados}
+
+Os perfis contêm atributos técnicos, atributos sensíveis e uma pontuação alvo:
+
+\begin{itemize}
+    \item \textbf{Features Técnicas:} \texttt{years\_experience} (contínuo), \texttt{skills} (numérico), \texttt{education\_level} (ordinal: Ensino Médio a Doutorado) e \texttt{preferred\_work\_mode} (presencial, híbrido, remoto).
+    \item \textbf{Atributos Sensíveis:} \texttt{gender} (Masculino, Feminino, Não-binário), \texttt{race} (Branca, Preta, Parda, Amarela, Indígena) e \texttt{location} (Capitais, Região Metropolitana, Interior, servindo como proxy geográfico).
+    \item \textbf{Target Variable (\texttt{suitability\_score}):} Escala de $0$ a $1$ mensurando a adequação à vaga. É derivada deterministicamente das métricas técnicas, com vieses introduzidos de acordo com o cenário.
+\end{itemize}
+
+\subsection{Tamanhos e Cenários}
+
+O dataset provê partições de \textbf{1k}, \textbf{5k} e \textbf{10k} instâncias para avaliar, respectivamente, prototipação, experimentação padrão e escalabilidade. Cada partição apresenta três cenários de viés:
+
+\begin{enumerate}
+    \item \textbf{\textit{Debiased} (Justo):} Distribuição uniforme de atributos sensíveis. O \texttt{suitability\_score} depende estritamente das métricas técnicas, sem influência demográfica, definindo o \textit{ground truth} ideal.
+    \item \textbf{\textit{Biased} (Realista):} Distribuição desbalanceada e aplicação de penalidades estruturais no \textit{score} de minorias (ex.: candidatas mulheres ou negros), mimetizando o viés histórico.
+    \item \textbf{\textit{Extreme Bias}:} Magnifica drasticamente as penalizações do cenário anterior, delineando um \textit{stress test} para avaliar os limites dos métodos de mitigação.
+\end{enumerate}
+
+\section{Metodologia de Geração}
+
+Para assegurar reprodutibilidade e \textit{ground truth} perfeitamente conhecido, adotamos uma geração estatística controlada como \textit{pipeline} principal, em contraste com métodos puramente baseados em \textit{Deep Learning}. Essa transparência matemática permite quantificar exatamente o viés injetado e recuperado.
+
+\subsection{Geração Controlada}
+
+A distribuição das variáveis contínuas (experiência, habilidades) segue modelos normais truncados, enquanto características categóricas (educação, demografia) adotam distribuições de probabilidade predefinidas. 
+
+A adequação base ($S_{base}$) do candidato é uma combinação linear rigorosa de suas competências:
+
+\begin{equation}
+S_{base} = \alpha_1 \left( \frac{\text{exp}}{\max(\text{exp})} \right) + \alpha_2 \left( \frac{\text{skills}}{\max(\text{skills})} \right) + f_{edu}(\text{edu\_level})
+\end{equation}
+
+onde $\alpha_1 = 0.4$, $\alpha_2 = 0.4$, e $f_{edu}$ mapeia o grau educacional em incrementos de pontuação (ex.: Ensino Médio = 0.1, Doutorado = 0.25). 
+
+O viés é injetado através de penalizações aditivas específicas ($B_{genero}$, $B_{raca}$, $B_{local}$). O \textit{score} final incorpora essas penalizações e um ruído gaussiano ($\epsilon \sim \mathcal{N}(0, \sigma^2)$) simulando a subjetividade humana:
+
+\begin{equation}
+\text{suitability\_score} = \max\left( \min\left( S_{base} + B_{genero} + B_{raca} + B_{local} + \epsilon, 1 \right), 0 \right)
+\end{equation}
+
+No cenário \textit{Debiased}, $B_{attr} = 0$. Nos demais, minorias recebem valores negativos em $B_{attr}$, reduzindo deterministicamente sua adequação percebida.
+
+\subsection{Baseline Neural (FairGAN)}
+
+Para análise comparativa, o repositório inclui um gerador baseado em \textit{FairGAN}, treinado sobre o cenário \textit{Biased} com o intuito de sintetizar uma versão neutra dos dados. Entretanto, confirmamos que essa arquitetura obscurece o mapeamento latente entre \textit{features} e o \textit{score}, fundindo "mérito real" e "ruído social". Tal limitação reforça a necessidade metodológica do nosso \textit{pipeline} estatístico controlado para fins de \textit{benchmarking} rigoroso.
+
+\section{Análise do Dataset}
+
+A validação empírica confirma o rigor do método de injeção de viés. No cenário \textit{Debiased}, a distribuição do \texttt{suitability\_score} é estatisticamente idêntica entre diferentes subgrupos demográficos. 
+
+Nos datasets \textit{Biased}, a densidade do \textit{score} sofre um deslocamento expressivo à esquerda para grupos penalizados, reduzindo severamente sua presença no decil superior (\textit{top 10\%}) de ranqueamento, a despeito de suas competências (\textit{skills}). No ambiente \textit{Extreme Bias}, ocorre uma segregação quase total das densidades. Analisando a escalabilidade, partições de 10k amostras eliminam variações estocásticas observadas nos subconjuntos de 1k, estabilizando as métricas de paridade demográfica e configurando-se como o tamanho ideal para publicação de \textit{benchmarks}.
+
+\section{Aplicações e Uso}
+
+Este artefato destina-se a três principais frentes de pesquisa:
+
+\begin{itemize}
+    \item \textbf{Auditoria de \textit{Fairness}:} O cenário \textit{debiased} atua como \textit{ground truth} para atestar se algoritmos treinados no cenário \textit{biased} conseguem mitigar disparidades e restaurar a ordem original de adequação dos candidatos.
+    \item \textbf{\textit{Benchmarking} de Escalabilidade:} As partições de 10k registros viabilizam a análise de complexidade computacional (tempo e espaço) de técnicas de mitigação \textit{in-processing} exigidas em recomendações de tempo real.
+    \item \textbf{\textit{Re-ranking} Multi-Objetivo:} O dataset suporta heurísticas de pós-processamento que buscam maximizar a utilidade da recomendação global equilibrada com restrições simultâneas de diversidade demográfica e geográfica.
+\end{itemize}
+
+\section{Conclusão e Trabalhos Futuros}
+
+Apresentamos um dataset sintético de \textit{e-recruitment} focado no estudo rigoroso e transparente da justiça algorítmica. Ao viabilizar o controle matemático sobre a injeção de viés e dispor de múltiplos cenários parametrizados, o artefato supera as limitações de opacidade e rigidez encontradas em datasets reais. 
+
+Como trabalhos futuros, planejamos estender a estrutura tabular para incluir relacionamentos em grafos (simulando redes de indicação corporativa) e séries temporais, permitindo a investigação de viés algorítmico cumulativo ao longo da progressão da carreira profissional.
+
+\bibliographystyle{sbc}
+\begin{thebibliography}{}
+
+\bibitem[Choi et al. 2020]{choi2020fair}
+Choi, K., Grover, A., Singh, T., Shu, P., and Ermon, S. (2020).
+\newblock Fair generative modeling via weak supervision.
+\newblock In {\em International Conference on Machine Learning (ICML)}.
+
+\bibitem[Cowgill and Tucker 2020]{cowgill2020bias}
+Cowgill, B. and Tucker, C.~E. (2020).
+\newblock Bias and productivity in humans and algorithms: Theory and evidence from resume screening.
+\newblock {\em NBER Working Paper No. 28243}.
+
+\bibitem[Mehrabi et al. 2021]{mehrabi2021survey}
+Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., and Galstyan, A. (2021).
+\newblock A survey on bias and fairness in machine learning.
+\newblock {\em ACM Computing Surveys (CSUR)}, 54(6):1--35.
+
+\bibitem[Xu et al. 2018]{xu2018fairgan}
+Xu, D., Yuan, S., Zhang, L., and Wu, X. (2018).
+\newblock Fairgan: Fairness-aware generative adversarial networks.
+\newblock In {\em 2018 IEEE International Conference on Big Data (Big Data)}, pages 570--575. IEEE.
+
+\end{thebibliography}
+
+\end{document}

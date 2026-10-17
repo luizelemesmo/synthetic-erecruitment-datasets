@@ -28,7 +28,7 @@ O repositório disponibiliza 9 conjuntos prontos em `data/final/` e pipelines pa
 
 | Cenário | Descrição | Parâmetros de Penalização Demográfica | Ruído ($\sigma$) |
 |---|---|---|---|
-| **`debiased`** (Justo) | Distribuição demográfica uniforme. O escore depende estritamente das métricas técnicas, sem penalidades de atributos sensíveis. Serve como **Ground Truth**. | $B_{attr} = 0$ | $\sigma = 0.05$ |
+| **`debiased`** (Justo) | Distribuição demográfica uniforme. O escore depende estritamente das métricas técnicas, sem penalidades de atributos sensíveis. Serve como **Ground Truth**. | $B_{\text{attr}} = 0$ | $\sigma = 0.05$ |
 | **`biased`** (Realista) | Distribuição assimétrica espelhando o setor de TI brasileiro, com injeção aditiva de penalidades em grupos minoritários/marginalizados. | Gênero: $-0.10$<br>Raça (Preta/Parda): $-0.10$ a $-0.15$<br>Local (Interior): $-0.05$ | $\sigma = 0.07$ |
 | **`extreme_bias`** (Estresse) | Magnificação drástica das penalidades estruturais para avaliar os limites e quebras de algoritmos de mitigação e re-ranking. | Gênero: $-0.25$<br>Raça (Preta/Parda): $-0.20$ a $-0.30$<br>Local (Interior): $-0.15$ | $\sigma = 0.05$ |
 
@@ -56,9 +56,16 @@ O esquema detalhado dos dados (`data/data_dictionary.csv`) inclui:
 
 ### Variável-Alvo
 * `suitability_score` (float $[0, 1]$): Medida da adequação do candidato à vaga. No cenário base, resulta de uma combinação linear normalizada das variáveis técnicas:
-  $$S_{base} = \alpha_1 \frac{\text{exp}}{\max(\text{exp})} + \alpha_2 \frac{\text{skills}}{\max(\text{skills})} + f_{edu}(\text{education\_level})$$
+
+  ```math
+  S_{\text{base}} = \alpha_1 \frac{\text{exp}}{\max(\text{exp})} + \alpha_2 \frac{\text{skills}}{\max(\text{skills})} + f_{\text{edu}}(\text{education\_level})
+  ```
+
   Nos cenários com viés, incorpora penalidades demográficas aditivas e ruído gaussiano:
-  $$\text{suitability\_score} = \text{clip}(S_{base} + B_{gênero} + B_{raça} + B_{local} + \varepsilon, 0, 1)$$
+
+  ```math
+  \text{suitability\_score} = \text{clip}\left(S_{\text{base}} + B_{\text{gênero}} + B_{\text{raça}} + B_{\text{local}} + \varepsilon,\ 0,\ 1\right)
+  ```
 
 ---
 
